@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Aula3" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="textAllCaps">false</item>
+        <item name="actionBarStyle">@style/myActionBarStyle</item>
+    </style>
+    <style name="myActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/titleback</item>
+        <item name="titleTextStyle">@style/MyTitleStyle</item>
+    </style>
+    <style name="MyTitleStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/titletext</item>
+    </style>
+
+</resources>

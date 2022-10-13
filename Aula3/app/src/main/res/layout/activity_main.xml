@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    android:id="@+id/llTest"
+    >
+
+    <TextView
+        android:id="@+id/tvTexto"
+
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="24sp"
+
+        android:gravity="center_vertical"
+
+        android:textSize="24sp"
+        android:typeface="serif"
+        android:textColor="#000000"
+        android:maxLines="1"
+
+        android:textStyle="italic"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="40dp"
+
+        android:background="#00ffff"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:text="Qualquer coisa" />
+
+    <Button
+        android:id="@+id/btnOpcao1"
+
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção 1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00ff00"
+        android:padding="5dp"
+        >
+
+        <Button
+            android:id="@+id/btnOpcao2"
+
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Opção 2"
+            />
+
+        <Button
+            android:id="@+id/btnOpcao3"
+
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Opção 3"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FF00FF"
+        android:padding="5dp"
+        >
+
+        <Button
+            android:id="@+id/btnOpcao4"
+
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Opção 4"
+            />
+
+        <Button
+            android:id="@+id/btnOpcao5"
+
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Opção 5"
+            android:onClick="onOpcao5"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teste"/>
+
+</LinearLayout>
