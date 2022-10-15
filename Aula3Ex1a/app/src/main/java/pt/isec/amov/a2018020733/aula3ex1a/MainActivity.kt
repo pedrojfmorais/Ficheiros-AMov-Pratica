@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
             num2 = 0.0
         }
 
-        TODO(% .)
+        TODO("% .")
     }
 
     val procNumeros = object : View.OnClickListener {
