@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import pt.isec.amov.a2018020733.aula3ex1a.databinding.ActivityMainBinding
+import kotlin.math.round
+import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.ac.setOnClickListener{
             binding.display.text = "0"
+            reset()
         }
 
         binding.maisMenos.setOnClickListener{
@@ -51,52 +54,74 @@ class MainActivity : AppCompatActivity() {
         binding.mul.setOnClickListener(procOperation)
         binding.div.setOnClickListener(procOperation)
 
-        binding.equals.setOnClickListener{
+        binding.equals.setOnClickListener(procEqual)
 
-            num2 = binding.display.text.toString().toDouble()
+        binding.decimal.setOnClickListener(procDecimal)
+        binding.perc.setOnClickListener(procPerc)
 
-            var res : Double = 0.0
+    }
 
+    val procNumeros = View.OnClickListener { p0 ->
+        when(binding.display.text.toString()){
+            "0" -> binding.display.text = (p0 as Button).text
+            else -> binding.display.text = binding.display.text.toString() + (p0 as Button).text
+        }
+    }
+
+    val procZero = View.OnClickListener { p0 ->
+        if(binding.display.text.toString() != "0")
+            binding.display.text = binding.display.text.toString() + (p0 as Button).text
+    }
+
+    val procOperation = View.OnClickListener { p0 ->
+        if(binding.display.text.toString() != "0") {
+            num1 = binding.display.text.toString().toDouble()
+            operator = (p0 as Button).text.toString()
+            binding.display.text = "0"
+        }
+    }
+
+    val procEqual = View.OnClickListener { p0 ->
+        num2 = binding.display.text.toString().toDouble()
+
+        var res = 0.0
+
+        when(operator){
+            "+" -> res = num1 + num2
+            "-" -> res = num1 - num2
+            "*" -> res = num1 * num2
+            "/" -> res = num1 / num2
+        }
+
+        // arrendondar a 5 casas decimais
+        res = (res * 100000.0).roundToInt() / 100000.0
+
+        binding.display.text = res.toString()
+
+        reset()
+    }
+
+    val procDecimal = View.OnClickListener { p0 ->
+        if(binding.display.text.toString().toIntOrNull() != null)
+            binding.display.text = binding.display.text.toString() + "."
+    }
+
+
+    val procPerc = View.OnClickListener { p0 ->
+        if(num1 != 0.0){
             when(operator){
-                "+" -> res = num1 + num2
-                "-" -> res = num1 - num2
-                "*" -> res = num1 * num2
-                "/" -> res = num1 / num2
+                "+", "-" -> binding.display.text = (num1 * (binding.display.text.toString().toDouble() / 100)).toString()
+                "*", "/" -> binding.display.text = (binding.display.text.toString().toDouble() / 100).toString()
             }
-
-            binding.display.text = res.toString()
-
-            num1 = 0.0
-            operator = "+"
-            num2 = 0.0
-        }
-
-        TODO("% .")
+        }else
+            binding.display.text = (binding.display.text.toString().toDouble() /100).toString()
     }
 
-    val procNumeros = object : View.OnClickListener {
-        override fun onClick(p0: View?) {
-            when(binding.display.text.toString()){
-                "0" -> binding.display.text = (p0 as Button).text
-                else -> binding.display.text = binding.display.text.toString() + (p0 as Button).text
-            }
-        }
-    }
 
-    val procZero = object : View.OnClickListener {
-        override fun onClick(p0: View?) {
-            if(binding.display.text.toString() != "0")
-                binding.display.text = binding.display.text.toString() + (p0 as Button).text
-        }
-    }
 
-    val procOperation = object : View.OnClickListener {
-        override fun onClick(p0: View?) {
-            if(binding.display.text.toString() != "0") {
-                num1 = binding.display.text.toString().toDouble()
-                operator = (p0 as Button).text.toString()
-                binding.display.text = "0"
-            }
-        }
+    fun reset(){
+        num1 = 0.0
+        operator = "+"
+        num2 = 0.0
     }
 }

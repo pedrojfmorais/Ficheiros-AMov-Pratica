@@ -11,20 +11,21 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp"
+        android:background="@color/backgroundCalculator"
         >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#ffbb00"
+            android:background="@color/displayBackground"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:maxLines="1"
             android:text="0"
-            android:textColor="#CCCCCC"
+            android:textColor="@color/displayText"
             android:gravity="center_vertical|end"
-            android:autoSizeTextType="uniform"
+            android:textSize="42sp"
             android:id="@+id/display"
             />
 
@@ -42,6 +43,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/ac"/>
             <Button
                 android:layout_width="match_parent"
@@ -51,6 +53,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/mais_menos"/>
             <Button
                 android:layout_width="match_parent"
@@ -60,6 +63,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/perc"/>
             <Button
                 android:layout_width="match_parent"
@@ -69,6 +73,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/div"/>
 
         </LinearLayout>
@@ -86,6 +91,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/sete"/>
             <Button
                 android:layout_width="match_parent"
@@ -95,6 +101,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/oito"/>
             <Button
                 android:layout_width="match_parent"
@@ -104,6 +111,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/nove"/>
             <Button
                 android:layout_width="match_parent"
@@ -113,6 +121,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/mul"/>
 
         </LinearLayout>
@@ -130,6 +139,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/quatro"/>
             <Button
                 android:layout_width="match_parent"
@@ -139,6 +149,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/cinco"/>
             <Button
                 android:layout_width="match_parent"
@@ -148,6 +159,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/seis"/>
             <Button
                 android:layout_width="match_parent"
@@ -157,6 +169,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/sub"/>
 
         </LinearLayout>
@@ -174,6 +187,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/um"/>
             <Button
                 android:layout_width="match_parent"
@@ -183,6 +197,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/dois"/>
             <Button
                 android:layout_width="match_parent"
@@ -192,6 +207,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/tres"/>
             <Button
                 android:layout_width="match_parent"
@@ -201,6 +217,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/add"/>
 
         </LinearLayout>
@@ -223,6 +240,7 @@
                     android:autoSizeTextType="uniform"
                     android:maxLines="1"
                     android:layout_margin="5dp"
+                    android:backgroundTint="@color/buttons"
                     android:id="@+id/zero"/>
             </LinearLayout>
             <LinearLayout
@@ -237,6 +255,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/decimal"/>
             <Button
                 android:layout_width="match_parent"
@@ -246,6 +265,7 @@
                 android:autoSizeTextType="uniform"
                 android:maxLines="1"
                 android:layout_margin="5dp"
+                android:backgroundTint="@color/buttons"
                 android:id="@+id/equals"/>
             </LinearLayout>
         </LinearLayout>
