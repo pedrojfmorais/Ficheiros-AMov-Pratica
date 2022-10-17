@@ -106,7 +106,6 @@ class MainActivity : AppCompatActivity() {
             binding.display.text = binding.display.text.toString() + "."
     }
 
-
     val procPerc = View.OnClickListener { p0 ->
         if(num1 != 0.0){
             when(operator){
@@ -116,8 +115,6 @@ class MainActivity : AppCompatActivity() {
         }else
             binding.display.text = (binding.display.text.toString().toDouble() /100).toString()
     }
-
-
 
     fun reset(){
         num1 = 0.0
