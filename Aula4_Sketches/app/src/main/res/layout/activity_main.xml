@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_l1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:background="@color/color_c1"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:padding="32dp"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/sketches_title"/>
+
+    <LinearLayout
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        >
+        <Button
+            android:id="@+id/btnColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_color"
+            android:layout_margin="8dp"
+            android:padding="16dp"/>
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_gallery"
+            android:layout_margin="8dp"
+            android:padding="16dp"/>
+        <Button
+            android:id="@+id/btnPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_photo"
+            android:layout_margin="8dp"
+            android:padding="16dp"/>
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_history"
+            android:layout_margin="8dp"
+            android:padding="16dp"/>
+    </LinearLayout>
+</FrameLayout>

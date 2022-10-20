@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aula4_Sketches</string>
+    <string name="sketches_title">Rascunhos</string>
+    <string name="msg_color">Cor Solida</string>
+    <string name="msg_gallery">Galeria</string>
+    <string name="msg_photo">Foto</string>
+    <string name="msg_history">Histórico</string>
+</resources>
