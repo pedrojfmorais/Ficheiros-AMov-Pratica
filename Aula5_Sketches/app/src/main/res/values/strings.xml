@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Sketches@Android</string>
+    <string name="msg_solid_color">Solid Color</string>
+    <string name="msg_gallery">Gallery image</string>
+    <string name="msg_photo">Photo</string>
+    <string name="msg_history">History</string>
+    <string name="sketches_title">Sketches</string>
+    <string name="msg_soon">Available soon</string>
+    <string name="ask_title">Title:</string>
+    <string name="hint_title">Sketch title</string>
+    <string name="ask_background_color">Background Color:</string>
+    <string name="ask_red">R:</string>
+    <string name="ask_green">G:</string>
+    <string name="ask_blue">B:</string>
+    <string name="msg_empty_title">You must give a title</string>
+    <string name="str_no_name">No name</string>
+    <string name="mn_Create">Create</string>
+    <string name="mn_save">Save</string>
+    <string name="mn_white">White</string>
+    <string name="mn_yellow">Yellow</string>
+    <string name="mn_blue">Blue</string>
+    <string name="mn_black">Black</string>
+    <string name="ask_background_image">Background image:</string>
+    <string name="btn_choose_image">Choose image</string>
+    <string name="btn_take_photo">Take photo</string>
+    <string name="msg_no_image">No image defined</string>
+</resources>
