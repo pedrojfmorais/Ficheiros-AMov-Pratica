@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rascunho@Android</string>
+    <string name="msg_solid_color">Fundo Sólido</string>
+    <string name="msg_gallery">Imagem da galeria</string>
+    <string name="msg_photo">Fotografia</string>
+    <string name="msg_history">Histórico</string>
+    <string name="sketches_title">Rascunho</string>
+    <string name="msg_soon">Disponível brevemente</string>
+    <string name="ask_title">Título:</string>
+    <string name="hint_title">Indique o título</string>
+    <string name="ask_background_color">Cor de fundo:</string>
+    <string name="ask_red">R:</string>
+    <string name="ask_green">G:</string>
+    <string name="ask_blue">B:</string>
+    <string name="msg_empty_title">Tem de indicar um título</string>
+    <string name="str_no_name">Sem nome</string>
+    <string name="mn_Create">Criar</string>
+    <string name="mn_save">Gravar</string>
+    <string name="mn_white">Branco</string>
+    <string name="mn_yellow">Amarelo</string>
+    <string name="mn_blue">Azul</string>
+    <string name="mn_black">Preto</string>
+    <string name="ask_background_image">Imagem de fundo:</string>
+    <string name="btn_choose_image">Escolher imagem</string>
+    <string name="btn_take_photo">Tirar fotografia</string>
+    <string name="msg_no_image">Não existe imagem definida</string>
+</resources>
