@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Aula9_Firebase</string>
+    <string name="msg_status">Status</string>
+    <string name="msg_email">E-mail:</string>
+    <string name="msg_email_address">E-mail address</string>
+    <string name="msg_password">Password:</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_createAccount">Create account (e-mail)</string>
+    <string name="btn_signIn">Sign In (e-mail)</string>
+    <string name="btn_logout">Logout (e-mail)</string>
+    <string name="btn_signInG">Sign In (gmail)</string>
+    <string name="btn_logoutG">Logout (gmail)</string>
+    <string name="msg_data_status">Data status</string>
+    <string name="btn_add_new_data">Add new data</string>
+    <string name="btn_update_data">Update data</string>
+    <string name="btn_observe_data">Observe data</string>
+    <string name="btn_remove_data">Remove data</string>
+</resources>

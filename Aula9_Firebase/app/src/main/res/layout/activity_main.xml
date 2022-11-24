@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UsingOnClickInXml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/msg_status"
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="#c0c0c0"
+            android:textColor="@color/black"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_email"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:hint="@string/msg_email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_password"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:hint="@string/hint_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCreateAccountEmail"
+            android:text="@string/btn_createAccount" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSignInEmail"
+            android:text="@string/btn_signIn" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onLogoutEmail"
+            android:text="@string/btn_logout" />
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSignInGmail"
+            android:text="@string/btn_signInG" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onLogoutGmail"
+            android:text="@string/btn_logoutG" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/tvLog"
+            android:text="@string/msg_data_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="#c0c0c0"
+            android:textColor="@color/black"
+            android:fontFamily="monospace" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onAddNewData"
+            android:text="@string/btn_add_new_data" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onUpdateData"
+            android:text="@string/btn_update_data" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRemoveData"
+            android:text="@string/btn_remove_data" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onObserveData"
+            android:text="@string/btn_observe_data" />
+    </LinearLayout>
+</ScrollView>
