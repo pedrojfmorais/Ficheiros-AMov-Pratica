@@ -1,0 +1,10 @@
+{
+  "_locale": "en",
+  "locationServiceNotAvailable": "Location service not available",
+  "locationPermissionsNotGranted": "Location permissions not granted",
+  "refresh": "Refresh",
+  "youHavePushedTheButtonThisManyTimes": "You have pushed the button this many times:",
+  "increment": "Increment",
+  "latitudeLatitude": "Latitude_en: {latitude}",
+  "longitudeLongitude": "Longitude: {longitude}"
+}
